@@ -3,6 +3,9 @@ $(document).ready( function(){
 	//La variable "recipesArray" esta declarada en el archivo "data/recipes.js"
 	renderHighlightedRecipes(recipesArray);
 
+	// llamar a la funcion en donde aparecera el titulo de recetas en las noticias
+	printNews();
+
 });
 
 /* Funcion para que desaparezca la flecha */
@@ -27,6 +30,15 @@ function renderRecipe(recipe) {
 	console.log('Voy a pintar la receta: ', recipe);
 }
 
+/*funcion de noticias,aparecen titulo de noticias
+	 se escribe aqui dentro para que se cargue con la pagina*/
+	
+	function printNews()
+	{
+		$(".title-callout").append("<p id='title-news'>" +
+															"<h3 id='the-title'> NUEVAS RECETAS </h3>" +
+															"</p>")
+	}
 
 
 /*
