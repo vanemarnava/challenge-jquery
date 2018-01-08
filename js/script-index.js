@@ -5,6 +5,9 @@ $(document).ready( function(){
 
 });
 
+/* Funcion para que desaparezca la flecha */
+$(".js-back").remove();
+
 
 /*
 * Función que se encarga de pintar TODAS las recetas que tengan 
